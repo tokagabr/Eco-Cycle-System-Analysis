@@ -1,48 +1,52 @@
-📝 Eco Cycle – Integrated Waste Management System
-Technical System Analysis & Full-Stack Implementation
-🌟 Overview
-Eco Cycle is a sustainable startup solution designed to tackle plastic pollution. The platform connects partners (Universities, Malls, Supermarkets) with a centralized recycling system. It automates the process of collecting plastic waste, sorting it by quality, and transforming it into raw materials for 3D printing filaments.
+# ♻️ Eco Cycle – Integrated Waste Management System
+> **Technical System Analysis & Full-Stack Development**
 
-🛠️ Tech Stack
-System Analysis: UML Modeling (Draw.io), Requirements Engineering.
+## 📌 Project Overview
+**Eco Cycle** is a sustainable business solution designed to tackle plastic pollution in Egypt. The platform connects partners (Universities, Malls, Hospitals) with a centralized recycling facility. It automates the lifecycle of plastic waste—from collection at smart drop-off points to processing it into raw materials for **3D printing filaments**.
 
-Front-End: React.js, Bootstrap, HTML5, CSS3.
+---
 
-Back-End: PHP (Server-side logic).
+## 🛠️ Technical Stack
+* **Analysis:** UML Modeling, Requirements Engineering (Functional/Non-Functional).
+* **Frontend:** React.js, Bootstrap 5, HTML5, CSS3.
+* **Backend:** PHP (Server-side logic).
+* **Database:** MySQL (Relational Schema Design).
+* **Tools:** Draw.io (UML), Visual Studio Code.
 
-Database: MySQL (Relational Database Design).
+---
 
-📊 System Analysis & Design (The Core)
-In this project, I performed a full SDLC analysis to ensure the system meets business and user needs.
+## 🏗️ System Analysis & Design
+*As a System Analyst on this project, I led the documentation and modeling phase to ensure a seamless integration between business logic and technical execution.*
 
-1. Requirements Engineering
-Functional Requirements: User registration, reward points system, partner location tracking, and an e-commerce checkout for recycled materials.
+### 1. Requirements Engineering
+* **Functional:** User Authentication, Reward Points Calculation, Partner Dashboard, and Filament Inventory Management.
+* **Non-Functional:** System Scalability, Data Integrity, and High Availability for partner transactions.
 
-Non-Functional Requirements: Scalability for new partners, data security for transactions, and high availability.
+### 2. UML Modeling (The Core Logic)
+The project includes detailed architectural diagrams to map the system's behavior:
+| Diagram Type | Purpose |
+| :--- | :--- |
+| **Use Case Diagram** | Defined interactions between Users, Partners, and System Admins. |
+| **Class Diagram** | Architected the database entities (Users, Orders, Inventory, PlasticTypes). |
+| **Sequence Diagram** | Modeled the step-by-step logic for the "Reward Points" and "Checkout" flows. |
+| **Activity Diagram** | Visualized the operational workflow from plastic collection to sorting. |
+| **Context Diagram** | Defined the system boundaries and external entities. |
 
-2. UML Modeling
-I designed multiple diagrams to map the system architecture:
+---
 
-Use Case Diagram: To define interactions between Users, Partners, and Admins.
+## 🚀 Key Features
+* **Smart Partner Locations:** Dedicated pages for tracking drop-off boxes in high-traffic areas.
+* **Inventory Tracking:** Real-time monitoring of collected plastic quality and quantities.
+* **E-commerce Module:** A functional store for selling recycled materials to 3D printing businesses.
+* **Sustainability Analytics:** Tracking the environmental impact through data-driven reporting.
 
-Class Diagram: To architect the database entities (User, Order, PlasticType, Inventory).
+---
 
-Sequence Diagram: To model the logic of the "Reward Points" and "Order Placement" processes.
+## 📂 Repository Contents
+* `/Documentation`: Full Project Report & Software Requirements Specification (SRS).
+* `/Diagrams`: High-resolution UML exports (Class, Sequence, Activity).
+* `/Design`: UI/UX wireframes and system screenshots.
 
-Activity Diagram: To visualize the plastic sorting and recycling workflow.
-
-🚀 Key Features
-Smart Collection Points: A dashboard to locate and manage drop-off boxes at partner sites.
-
-Recycling Inventory: Real-time tracking of collected plastic vs. processed raw materials.
-
-E-commerce Store: A functional shop for selling 3D printing materials produced from recycled waste.
-
-Rewards Logic: A points-based system to incentivize partners and users to recycle more.
-
-📁 Project Structure
-/Documentation: Contains the full project report (PDF) and Software Requirement Specification (SRS).
-
-/Diagrams: High-resolution UML diagrams (Class, Sequence, Activity).
-
-/UI-Design: Wireframes and screenshots of the platform interface.
+---
+**Maintained by:** Toka Gamal  
+*B.Sc. in Management Information Systems (MIS)*
