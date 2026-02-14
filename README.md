@@ -48,5 +48,5 @@ The project includes detailed architectural diagrams to map the system's behavio
 * `/Design`: UI/UX wireframes and system screenshots.
 
 ---
-**Maintained by:** Toka Gamal  
+**Maintained by:** Toka Gamal, Mazen Khaled, Amir Hesham, Yaseen Mohamed
 *B.Sc. in Management Information Systems (MIS)*
