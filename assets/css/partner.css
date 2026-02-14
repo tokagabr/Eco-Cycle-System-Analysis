@@ -1,0 +1,453 @@
+/*---=================================
+   <!--ecocycle Header Area Css-->
+==================================---*/
+.header-area {
+  border-bottom: 1px solid #49ae4421;
+  background-color: #111111;
+  z-index: 9;
+  position: relative;
+  margin-bottom: -143px;
+}
+
+.header-menu {
+  text-align: right;
+}
+
+.header-menu ul li {
+  display: inline-block;
+  margin-right: 57px;
+}
+
+.header-menu ul li:last-child {
+  margin-right: 50px;
+}
+
+.header-menu ul {
+  display: inline-block;
+}
+
+.header-menu ul li a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 33px 0;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.header-menu ul li a:hover {
+  color: #49af45;
+}
+
+.header-menu ul li i {
+  display: inline-block;
+  font-size: 12px;
+  position: relative;
+  left: 6px;
+  top: 0px;
+}
+.header-button {
+  display: inline-block;
+}
+
+.header-button a {
+  display: inline-block;
+  background: #49af45;
+  padding: 11px 26px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-left: 36px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.header-button a:hover {
+  color: #49af45 !important;
+}
+
+.header-button a:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  z-index: -1;
+  border-radius: 5px;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.header-button a:hover:before {
+  transform: scale(1);
+}
+
+.header-button i {
+  transition: 0.5s;
+}
+
+.header-button a:hover i {
+  color: #49af45 !important;
+}
+
+.sticky {
+  left: 0;
+  margin: auto;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+  background: #111111 !important;
+  transition: 0.5s;
+  z-index: 999 !important;
+  -webkit-animation: 300ms running fadeInDown;
+  animation: 500ms running fadeInUp;
+  animation-name: slideInDown;
+}
+
+.header-logo img {
+  max-width: 80px;
+  height: auto;
+}
+/* Main Content */
+.main-content {
+  min-height: calc(100vh - 200px);
+  margin-top: 300px;
+  padding-top: 0;
+}
+
+/* Section 1: Eco Cycle's */
+.eco-cycles {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 40px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.eco-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+.eco-text {
+  flex: 1;
+  text-align: left;
+}
+
+.eco-text h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.eco-text p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0;
+}
+
+.eco-image {
+  flex: 1;
+  max-width: 200px;
+  margin-left: 50px;
+}
+
+.eco-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .eco-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .eco-text {
+    text-align: center;
+  }
+
+  .eco-text h2 {
+    font-size: 2rem;
+  }
+
+  .eco-text p {
+    font-size: 1rem;
+  }
+
+  .eco-image {
+    max-width: 100%;
+  }
+}
+
+/* Section 2: Our Partner */
+.partners {
+  text-align: center;
+  padding: 0 20px 50px 20px;
+  background-color: #ffffff;
+  margin-top: 0;
+}
+
+.partners h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #080808;
+  margin-bottom: 0px;
+}
+
+.partners p {
+  font-size: 1.1rem;
+  color: #2c2b2b;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.partner-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 60px;
+  row-gap: 60px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.logo-placeholder {
+  width: 100%;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #666;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo-placeholder:hover {
+  transform: scale(1.05);
+}
+
+.logo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .partners h2 {
+    font-size: 2rem;
+  }
+
+  .partners p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .partner-logos {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+  .logo-placeholder {
+    max-width: 120px;
+  }
+}
+
+/* Section 3: If You Want to Become Our Partner */
+.become-partner {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.become-partner h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.become-partner p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+}
+.become-partner-button {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer Area CSS */
+.footer-area.home-six {
+  background-color: #03742e;
+  padding: 70px 0 40px;
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+}
+
+.footer-logo h2 {
+  font-size: 32px;
+  color: #fff;
+  margin: 0 0 25px 0;
+  font-weight: 700;
+}
+
+p.footer-desc {
+  margin: 20px 0 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-social-icon {
+  text-align: left;
+  margin-top: 35px;
+}
+
+.footer-social-icon ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social-icon ul li i {
+  display: inline-block;
+  font-size: 18px;
+  border: 2px solid #fff;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 38px;
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.footer-social-icon ul li i:hover {
+  color: #49af45;
+  border-color: #49af45;
+}
+
+.footer-social-icon ul li i:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.footer-social-icon ul li i:hover:after {
+  transform: scale(1);
+}
+
+.footer-widget-title h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-widget-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-widget-menu ul li {
+  color: #fff;
+  line-height: 40px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-widget-menu ul li a {
+  display: inline-block;
+  color: #fff;
+  line-height: 40px;
+  font-size: 16px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.footer-widget-menu ul li a:hover {
+  color: #49af45;
+}
+
+.footer-widget-menu ul li i {
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  margin-right: 8px;
+  transition: 0.5s;
+}
+
+.footer-widget-menu ul li a:hover i {
+  color: #49af45;
+}
+
+.footer-bottom-area {
+  padding: 30px 0 0;
+  clear: both;
+}
+
+.footer-bottom-content p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partner-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .our-partner {
+    height: auto;
+    padding: 20px;
+  }
+  .eco-cycles h2,
+  .our-partner h2,
+  .become-partner h2 {
+    font-size: 2rem;
+  }
+  .eco-cycles p,
+  .our-partner p,
+  .become-partner p {
+    font-size: 1rem;
+  }
+}

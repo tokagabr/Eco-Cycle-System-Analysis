@@ -1,0 +1,551 @@
+
+/* Normal desktop :1300px. */
+@media (min-width: 1300px) and (max-width: 1399px) {
+
+
+.header-menu ul li {
+    margin-right: 23px;
+}
+
+
+
+.home-six .about-list-item ul li {
+    font-size: 15px;
+}
+}
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+/*===============Home Six Responsive Css============*/
+
+
+.home-six .about-list-item ul li {
+    font-size: 15px;
+}
+
+.footer-widget-blog-thumb img {
+    width: 100%;
+}
+
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/*===============Home Six Responsive Css============*/
+
+
+.home-six .feature-content h4 {
+    font-size: 16px;
+}
+
+.home-six .section-title.left h1 {
+    font-size: 35px;
+    line-height: 34px;
+}
+
+
+.home-six .about-item-box {
+    display: block;
+}
+
+.home-six .about-list-item ul li {
+    font-size: 15px;
+}
+
+
+.home-six .services-content h4 {
+    font-size: 19px;
+}
+
+.home-six .footer-widget-menu ul {
+    margin-right: 3px;
+}
+
+.footer-widget-blog-thumb img {
+    width: 90%;
+}
+
+.home-six .footer-widget-blog {
+    gap: 0px;
+}
+}
+/* Normal desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+/*===============Home Six Responsive Css============*/
+
+.home-six.about-area {
+    padding: 81px 0 123px;
+}
+.home-six .footer-bottom-content ul li {
+    margin: 0 5px;
+}
+
+
+/*===============All Inner Pages Responsive Css============*/
+
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+.donation-details-area button.submit-donation {
+    margin-bottom: 37px;
+}
+
+.faqs-area.inner .faqs-thumb {
+    margin-bottom: 32px;
+}
+
+a.blog-list-title {
+    font-size: 25px;
+}
+
+.blog-details-author-talk {
+    padding: 41px 36px 40px;
+}
+
+.blog-post-box {
+    padding: 84px 21px 31px 22px;
+    gap: 15px;
+}
+
+.blog-post-box.style-two {
+    padding: 85px 24px 31px 21px;
+}
+
+.row.contact-info-bg {
+    padding: 50px 30px 14px;
+}
+
+.contact-info-box {
+    margin-bottom: 35px;
+}
+
+}
+
+
+.home-six .section-title.left h1 {
+    font-size: 36px;
+    line-height: 31px;
+}
+.home-six .section-title.center h1 {
+    font-size: 30px;
+    line-height: 33px;
+}
+.home-six.about-area {
+    padding: 81px 0 123px;
+}
+.home-six .about-item-box {
+    display: block;
+}
+.home-six .footer-social-icon {
+    margin-bottom: 34px;
+}
+.home-six .footer-bottom-content ul li {
+    margin: 0 5px;
+}
+/* Normal desktop :600px. */
+@media (min-width: 600px) and (max-width: 767px) {
+
+/*===============Home Six Responsive Css============*/
+
+.home-six .section-title.left h1 {
+    font-size: 36px;
+    line-height: 31px;
+}
+.home-six.about-area {
+    padding: 81px 0 123px;
+}
+.home-six .about-item-box {
+    display: block;
+}
+.home-six .footer-social-icon {
+    margin-bottom: 34px;
+}
+.home-six .footer-bottom-content ul li {
+    margin: 0 5px;
+}
+/*===============All Inner Pages Responsive Css============*/
+.breadcumb-area {
+    padding: 227px 0 143px;
+}
+
+.breadcumb-title h4 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+h4.services-details-title {
+    font-size: 25px;
+}
+
+.service-details-text-content p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.project-details-content h4 {
+    font-size: 28px;
+}
+
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+.project-details-content h4 {
+    font-size: 32px;
+}
+
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+h4.dontaion-detais-title {
+    font-size: 22px;
+}
+
+.donation-details-area button.submit-donation {
+    margin-bottom: 44px;
+}
+
+.faqs-area.inner .faqs-thumb {
+    margin-bottom: 32px;
+}
+
+.blog-list-content {
+    padding: 27px 13px 20px;
+}
+
+.blog-list-area .meta-blog span {
+    margin-right: 4px;
+}
+
+a.blog-list-title {
+    font-size: 18px;
+}
+
+.blog-details-content {
+    padding: 27px 22px 20px;
+}
+
+.blog-details-area span.mate-text {
+    padding-left: 27px;
+}
+
+.blog-details-area .meta-blog span {
+    margin-right: 6px;
+}
+
+.blog-details-author-talk {
+    display: block;
+}
+
+.blog-details-quote {
+    margin-bottom: 30px;
+}
+
+.blog-details-author-title p {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.blog-post-box {
+    padding: 84px 21px 31px 22px;
+    gap: 15px;
+}
+
+.blog-post-box.style-two {
+    padding: 85px 24px 31px 21px;
+}
+
+.blog-details-thumb.two {
+    margin-bottom: 20px;
+}
+
+.blog-details-social-icon {
+    text-align: left;
+    padding-top: 25px;
+}
+
+.single-comment-area {
+    padding: 49px 21px 56px;
+    margin-bottom: 32px;
+}
+
+.blog-details-comment-thumb {
+    float: inherit;
+    margin-right: 10px;
+    margin-bottom: 18px;
+}
+
+.blog-details-comment {
+    padding: 29px 25px 25px;
+}
+
+.blog-details-comment-content h2 {
+    margin-right: 8px;
+}
+
+.blog-details-comment.style-two {
+    margin-left: 0px;
+}
+
+.blog-details-comment-reply {
+    right: 17px;
+}
+
+.row.contact-info-bg {
+    padding: 50px 30px 14px;
+}
+
+.contact-info-box {
+    margin-bottom: 35px;
+}
+
+
+
+
+}
+
+
+
+/* Mobile Devices :320px. */
+@media (min-width: 320px) and (max-width: 479px) {
+
+
+/*===============Home Six Responsive Css============*/
+
+.home-six .section-title.left h1 {
+    font-size: 22px;
+    line-height: 20px;
+}
+.home-six .section-title.center h1 {
+    font-size: 18px;
+    line-height: 18px;
+}
+.home-six.about-area {
+    padding: 81px 0 123px;
+}
+.home-six .about-item-box {
+    display: block;
+}
+.home-six .about-list-item ul li i {
+    margin-right: 7px;
+}
+.home-six .footer-social-icon {
+    margin-bottom: 34px;
+}
+.home-six .footer-bottom-content ul li {
+    margin: 0 5px;
+}
+/*===============All Inner Pages Responsive Css============*/
+
+
+
+.breadcumb-area {
+    padding: 177px 0 98px;
+}
+
+.breadcumb-title h4 {
+    font-size: 22px;
+    padding-bottom: 8px;
+}
+
+h4.services-details-title {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.services-details-text {
+    padding: 29px 26px;
+    display: block;
+}
+
+.service-details-text-icon {
+    margin-bottom: 12px;
+}
+
+.service-details-text-content p {
+    font-size: 18px;
+    line-height: 26px;
+    width: 100%;
+}
+
+.service-details-icon-thumb {
+    margin-bottom: 20px;
+}
+
+/*widget-sidber*/
+.widget-sidber {
+    padding: 32px 16px 29px;
+}
+
+.project-details-content h4 {
+    font-size: 18px;
+}
+
+.project-details-content h3 {
+    font-size: 22px;
+}
+
+.project-details-right {
+    margin-bottom: 37px;
+}
+
+a.project-details-text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.donation-details-area .donation-content {
+    padding: 67px 7px 23px;
+}
+
+h4.dontaion-detais-title {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.donation-details-area .dpx label {
+    margin-right: 17px;
+}
+
+.donation-details-area button.submit-donation {
+    margin-bottom: 44px;
+}
+
+.faqs-area.inner .faqs-thumb {
+    margin-bottom: 32px;
+}
+
+.blog-list-content {
+    padding: 27px 13px 20px;
+}
+
+.blog-list-area .meta-blog span {
+    margin-right: 4px;
+}
+
+a.blog-list-title {
+    font-size: 18px;
+}
+
+.blog-details-content {
+    padding: 27px 13px 20px;
+}
+
+
+.blog-details-author-talk {
+    display: block;
+    padding: 41px 20px 40px;
+}
+
+.blog-details-quote {
+    margin-bottom: 30px;
+}
+
+h3.blog-details-title {
+    font-size: 18px;
+}
+
+h3.blog-details-title.two {
+    font-size: 18px;
+}
+
+.blog-details-socila-box {
+    padding: 19px 7px 18px;
+}
+
+.blog-details-category span a {
+    padding: 6px 10px;
+    margin-right: 7px;
+}
+
+.blog-details-author-title p {
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.blog-post-box {
+    padding: 84px 21px 31px 22px;
+    gap: 15px;
+}
+
+.blog-post-box.style-two {
+    padding: 85px 24px 31px 21px;
+}
+
+.blog-details-post .owl-prev {
+    left: 24px;
+    font-size: 15px !important;
+}
+
+.blog-details-post .owl-next {
+    right: 20px;
+    font-size: 15px;
+}
+
+.blog-details-thumb.two {
+    margin-bottom: 20px;
+}
+
+.blog-details-social-icon {
+    text-align: left;
+    padding-top: 25px;
+}
+
+.single-comment-area {
+    padding: 49px 21px 56px;
+    margin-bottom: 32px;
+}
+
+.blog-details-comment-thumb {
+    float: inherit;
+    margin-right: 10px;
+    margin-bottom: 18px;
+}
+
+.blog-details-comment {
+    padding: 29px 14px 25px;
+}
+
+.blog-details-comment-content h2 {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.blog-details-comment.style-two {
+    margin-left: 0px;
+}
+
+.blog-details-comment-reply {
+    right: 17px;
+}
+
+.row.contact-info-bg {
+    padding: 50px 30px 14px;
+}
+
+.contact-info-box {
+    margin-bottom: 35px;
+    padding: 0 0px 0;
+}
+
+}
+
+
+/*xl device min width*/
+@media screen and (min-width:992px) {
+    .pl-lg-50 {
+        padding-left: 50px;
+    }
+}
+
+/*xl device min width*/
+@media screen and (min-width:1200px) 
+{
+    .video-icon {
+        left: 75%;
+    }
+}
