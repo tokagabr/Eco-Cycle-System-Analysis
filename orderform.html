@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco Cycle Material</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('./image');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .page-container {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      max-width: 1200px;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: space-between;
+      min-height: calc(100vh - 100px);
+      margin-bottom: 50px;
+    }
+
+    .side-image {
+      max-width: 400px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      position: sticky;
+      top: 20px;
+    }
+
+    .content {
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: #1a472a;
+      font-size: 1.8em;
+      margin-bottom: 25px;
+      font-weight: 600;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .form-container:hover {
+      transform: translateY(-5px);
+    }
+
+    .field {
+      position: relative;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .field i {
+      color: #1a472a;
+      font-size: 1.5em;
+      opacity: 0.8;
+      min-width: 30px;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #1a472a;
+      font-size: 1em;
+    }
+
+    input[type="email"],
+    input[type="tel"],
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 0;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 1em;
+      background-color: #fff;
+      transition: all 0.3s ease;
+      line-height: 1.5;
+      height: 50px;
+    }
+
+    textarea {
+      min-height: 100px;
+      height: auto;
+      padding-top: 15px;
+    }
+
+    select {
+      height: 50px;
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a472a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 15px center;
+      background-size: 18px;
+      padding-right: 45px;
+    }
+
+    .input-wrapper {
+      flex: 1;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #49af45;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(73, 175, 69, 0.1);
+    }
+
+    input:hover, select:hover, textarea:hover {
+      border-color: #49af45;
+    }
+
+    input:focus + i, select:focus + i, textarea:focus + i {
+      color: #49af45;
+      opacity: 1;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #666;
+      margin: 15px 0;
+      padding: 10px;
+      background-color: #f8f9fa;
+      border-radius: 6px;
+      text-align: left;
+      line-height: 1.4;
+    }
+
+    .submit-button {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .submit-button button {
+      background: #49af45;
+      padding: 12px;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      width: 100%;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .submit-button button:hover {
+      background: #3d8c3a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(73, 175, 69, 0.2);
+    }
+
+    .success-message {
+      display: none;
+      color: #49af45;
+      font-weight: 600;
+      margin-top: 10px;
+      font-size: 0.9em;
+      padding: 15px;
+      background-color: rgba(73, 175, 69, 0.1);
+      border-radius: 6px;
+      border-left: 4px solid #49af45;
+    }
+
+    .success-message.show {
+      display: block;
+    }
+
+    .error-message {
+      display: none;
+      color: #e74c3c;
+      font-size: 0.9em;
+      margin-top: 10px;
+      padding: 15px;
+      background-color: rgba(231, 76, 60, 0.1);
+      border-radius: 6px;
+      border-left: 4px solid #e74c3c;
+    }
+
+    .error-message.show {
+      display: block;
+    }
+
+    .payment-options {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #1a472a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .page-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+      }
+      .side-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+        position: static;
+      }
+      .content {
+        max-width: 100%;
+      }
+      .form-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-container">
+    <div class="content">
+      <h2>Eco Cycle Material</h2>
+      
+      <div class="form-container">
+        <form action="submit_order.php" method="POST">
+          <div class="field">
+            <i class="bi bi-person"></i>
+            <div class="input-wrapper">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+          </div>
+          <div class="field">
+            <i class="bi bi-envelope"></i>
+            <div class="input-wrapper">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+          </div>
+          <div class="field">
+            <i class="bi bi-geo-alt"></i>
+            <div class="input-wrapper">
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            </div>
+          </div>
+          <div class="field">
+            <i class="bi bi-telephone"></i>
+            <div class="input-wrapper">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10,15}" required>
+            </div>
+          </div>
+          <div class="field">
+            <i class="bi bi-credit-card"></i>
+            <div class="input-wrapper">
+              <label for="payment">Payment Method</label>
+              <select id="payment" name="payment" required>
+                <option value="">Select payment method</option>
+                <option value="cash-on-delivery">Cash on Delivery</option>
+              </select>
+            </div>
+          </div>
+          <div class="submit-button">
+            <button id="submitButton">Submit Order</button>
+          </div>
+        </form>
+        <p class="success-message" id="successMessage">Order submitted successfully!</p>
+        <p class="error-message" id="errorMessage">Please fill all required fields.</p>
+      </div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1620283085436-4e0799030d54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=600&q=80" alt="Filament Spool" class="side-image">
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Eco Cycle. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('submitButton').addEventListener('click', function() {
+      // Validate inputs
+      const inputs = document.querySelectorAll('.field input, .field select');
+      const phoneInput = document.getElementById('phone');
+      const emailInput = document.getElementById('email');
+      let allFilled = true;
+      let phoneValid = true;
+      let emailValid = true;
+
+      // Check if all required fields are filled
+      inputs.forEach(input => {
+        if (input.hasAttribute('required') && !input.value) {
+          allFilled = false;
+        }
+      });
+
+      // Validate phone number format
+      const phonePattern = /^[0-9]{10,15}$/;
+      if (!phonePattern.test(phoneInput.value)) {
+        phoneValid = false;
+      }
+
+      // Validate email format
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(emailInput.value)) {
+        emailValid = false;
+      }
+
+      const successMessage = document.getElementById('successMessage');
+      const errorMessage = document.getElementById('errorMessage');
+
+      // Hide both messages initially
+      successMessage.classList.remove('show');
+      errorMessage.classList.remove('show');
+
+      if (allFilled && phoneValid && emailValid) {
+        successMessage.classList.add('show');
+        setTimeout(() => {
+          successMessage.classList.remove('show');
+          // Clear inputs after 3 seconds
+          inputs.forEach(input => input.value = '');
+        }, 3000);
+      } else {
+        errorMessage.classList.add('show');
+        setTimeout(() => {
+          errorMessage.classList.remove('show');
+        }, 3000);
+      }
+    });
+
+    function updateLengthNote() {
+      const weight = document.getElementById('quantity').value;
+      const diameter = document.getElementById('diameter').value;
+      const note = document.getElementById('lengthNote');
+      let length = '';
+
+      if (weight && diameter) {
+        if (diameter === '1.75') {
+          length = (weight / 1000) * 330;
+        } else if (diameter === '2.85') {
+          length = (weight / 1000) * 120;
+        }
+        note.textContent = `Note: ${weight} g ≈ ${Math.round(length)} meters for ${diameter} mm diameter (ABS/PETG).`;
+      }
+    }
+
+    document.getElementById('quantity').addEventListener('change', updateLengthNote);
+    document.getElementById('diameter').addEventListener('change', updateLengthNote);
+  </script>
+</body>
+</html>
